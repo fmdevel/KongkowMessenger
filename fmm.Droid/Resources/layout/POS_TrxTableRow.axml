@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:padding="3dp"
+    android:background="@drawable/rounded_corner">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:padding="1dp"
+        android:background="#FFFFFF">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFD0">
+            <EditText
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_margin="1dp"
+                android:padding="3dp"
+                android:background="@null"
+                android:inputType="textNoSuggestions"
+                android:id="@+id/tbTrxDate"
+                android:singleLine="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:padding="3dp"
+                android:layout_margin="1dp"
+                android:minWidth="90dp"
+                android:background="@null"
+                android:id="@+id/lbTrxStatus" />
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/lbTrxCekStatus"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_margin="1dp"
+                android:padding="3dp"
+                android:background="@drawable/chat_bg_out"
+                android:textStyle="bold"
+                android:gravity="center" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_marginTop="1dp"
+                android:padding="3dp"
+                android:background="#F0F0F0"
+                android:id="@+id/tbTrxDest"
+                android:inputType="textNoSuggestions"
+                android:layout_marginRight="1dp"
+                android:textStyle="bold"
+                android:singleLine="true" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:padding="3dp"
+                android:layout_marginTop="1dp"
+                android:id="@+id/tbTrxPrice"
+                android:inputType="textNoSuggestions"
+                android:background="#F0F0F0"
+                android:singleLine="true" />
+        </LinearLayout>
+        <EditText
+            android:padding="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tbTrxDesc"
+            android:inputType="textFilter|textMultiLine|textNoSuggestions"
+            android:textSize="16dp"
+            android:background="#F0F0F0"
+            android:layout_marginTop="1dp" />
+    </LinearLayout>
+</LinearLayout>

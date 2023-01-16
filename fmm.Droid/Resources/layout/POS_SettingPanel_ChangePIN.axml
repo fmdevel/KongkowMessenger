@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/tbOldPin"
+        android:layout_width="match_parent"
+        android:singleLine="true"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="PIN Lama"
+        android:inputType="textPassword" />
+    <EditText
+        android:id="@+id/tbNewPin"
+        android:layout_width="match_parent"
+        android:singleLine="true"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="PIN Baru"
+        android:inputType="textPassword" />
+    <EditText
+        android:id="@+id/tbConfPin"
+        android:layout_width="match_parent"
+        android:singleLine="true"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:inputType="textPassword"
+        android:hint="Konfirmasi PIN Baru" />
+</LinearLayout>

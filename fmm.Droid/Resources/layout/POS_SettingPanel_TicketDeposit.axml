@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#DDDDE0"
+        android:layout_margin="10dp">
+        <RadioButton
+            android:text="100.000"
+            android:id="@+id/rb100k"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="2px"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp" />
+        <RadioButton
+            android:text="150.000"
+            android:id="@+id/rb150k"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2px"
+            android:textSize="24dp"
+            android:background="#FFFFFF"
+            android:layout_marginTop="1px"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp" />
+        <RadioButton
+            android:text="200.000"
+            android:id="@+id/rb200k"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:background="#FFFFFF"
+            android:layout_marginTop="1px"
+            android:layout_marginBottom="2px"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp" />
+        <RadioButton
+            android:text="250.000"
+            android:id="@+id/rb250k"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:background="#FFFFFF"
+            android:layout_marginTop="1px"
+            android:layout_marginBottom="2px"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp" />
+        <RadioButton
+            android:text="Nominal lain .."
+            android:id="@+id/rbOther"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:background="#FFFFFF"
+            android:layout_marginTop="1px"
+            android:layout_marginBottom="3px"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp" />
+    </RadioGroup>
+    <EditText
+        android:id="@+id/tbSaldo"
+        android:layout_width="match_parent"
+        android:singleLine="true"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:textSize="24dp"
+        android:visibility="invisible"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp" />
+</LinearLayout>

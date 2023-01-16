@@ -1,0 +1,1 @@
+<ListView android:id="@+id/ListViewer" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@null" android:fadingEdge="none" android:footerDividersEnabled="false" android:divider="@null" android:scrollbarStyle="outsideInset" android:overScrollFooter="#00000000" xmlns:android="http://schemas.android.com/apk/res/android" />

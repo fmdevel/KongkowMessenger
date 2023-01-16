@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/plugin"
+            android:background="#EAEAF0"
+            android:layout_marginTop="2px"
+            android:padding="4dp"
+            android:gravity="center_vertical"
+            android:minHeight="48dp">
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="36dp"
+                android:src="@drawable/ic_plugin"
+                android:layout_marginLeft="4dp" />
+            <TextView
+                android:text="Printer Lainnya"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:paddingLeft="6dp"
+                android:layout_weight="0.25" />
+            <TextView
+                android:text="&gt; "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="32dp"
+                android:textColor="#0000FF"
+                android:layout_weight="1"
+                android:gravity="right" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bluetooth"
+            android:layout_marginTop="2px"
+            android:background="#EAEAF0"
+            android:gravity="center_vertical"
+            android:padding="4dp"
+            android:layout_marginBottom="2px"
+            android:minHeight="48dp">
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_bluetooth"
+                android:layout_marginLeft="4dp" />
+            <TextView
+                android:text="Scan Bluetooth Printer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:paddingLeft="6dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/listPrinter" />
+    </ScrollView>
+</LinearLayout>

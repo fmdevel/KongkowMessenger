@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SelectedDevice>api_30</SelectedDevice>
+    <DefaultDevice>api_30</DefaultDevice>
+    <AndroidDesignerPreferredTheme>Theme.Holo.Light.NoActionBar</AndroidDesignerPreferredTheme>
+    <SelectedPlatformGroup>Emulator</SelectedPlatformGroup>
+    <ActiveDebugProfile>API_30 %28Android 11.0 - API 30%29</ActiveDebugProfile>
+    <AndroidDesignerPreferredDevice>Nexus 4</AndroidDesignerPreferredDevice>
+    <ProjectView>ShowAllFiles</ProjectView>
+  </PropertyGroup>
+</Project>

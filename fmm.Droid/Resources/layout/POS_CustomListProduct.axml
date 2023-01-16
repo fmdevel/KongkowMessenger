@@ -1,0 +1,22 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/MPOS_Page">
+    <include
+        layout="@layout/ActivityHeader" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/custom_rounded_upper_corner"
+        android:paddingTop="8dp"
+        android:layout_margin="4dp"
+        android:id="@+id/MPOS_Content">
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/Kongkow_ListViewer" />
+    </LinearLayout>
+</LinearLayout>

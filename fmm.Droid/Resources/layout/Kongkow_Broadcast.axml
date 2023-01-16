@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ActivityHeader"
+        android:background="@color/header"
+        android:paddingBottom="6dp"
+        android:paddingTop="6dp">
+        <TextView
+            android:text="Broadcast"
+            android:id="@+id/MainTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="16dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="#FFFFFF"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true" />
+        <ImageView
+            android:id="@+id/AddContact"
+            android:src="@drawable/ic_addcontact"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:scaleType="fitCenter"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/rounded_corner"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/panelMessage"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp">
+        <include
+            layout="@layout/Kongkow_SimpleSelectedItem"
+            android:id="@+id/attachment"
+            android:visibility="gone" />
+        <EditText
+            android:id="@+id/tbChatMsg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textMultiLine|textNoSuggestions"
+            android:layout_marginRight="45dp"
+            android:layout_below="@id/attachment"
+            android:layout_marginLeft="7dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="5dp"
+            android:gravity="top|left"
+            android:background="@null" />
+        <ImageButton
+            android:id="@+id/btnSend"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/send"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="4dp"
+            android:layout_below="@id/attachment"
+            android:layout_marginTop="10dp" />
+        <ImageButton
+            android:id="@+id/btnAttach"
+            android:layout_width="37dp"
+            android:layout_height="40dp"
+            android:scaleType="fitXY"
+            android:background="@null"
+            android:src="@drawable/ic_attach_file"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="8dp"
+            android:layout_below="@id/attachment" />
+    </RelativeLayout>
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/Kongkow_ListViewer"
+        android:layout_below="@id/ActivityHeader"
+        android:layout_above="@id/panelMessage"
+        android:layout_margin="6dp" />
+</RelativeLayout>

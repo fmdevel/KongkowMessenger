@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@null"
+    android:paddingTop="2dp"
+    android:paddingBottom="1dp"
+    android:paddingLeft="3dp">
+  <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@drawable/rounded_corner"
+      android:padding="3dp">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:padding="4dp">
+      <CircleImageView
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+          android:id="@+id/ContactDP"
+          android:layout_gravity="center_vertical" />
+      <LinearLayout
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:paddingLeft="6dp"
+          android:paddingRight="3dp"
+          android:paddingTop="2dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+          <OnlineStatus
+      android:layout_width="11dp"
+      android:layout_height="11dp"
+      android:id="@+id/OnlineStatus"
+      android:layout_marginTop="0.5dp"
+      android:layout_marginRight="4dp" />
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/ContactName"
+              android:textStyle="bold"
+              android:textSize="16dp"
+              android:textColor="#3040A0"
+              android:layout_marginRight="5dp" />
+			<ImageView
+				android:id="@+id/badge"
+				android:layout_width="16dp"
+        		android:layout_height="16dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingTop="3dp">
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/ContactUpdate"
+              android:textColor="#656565"
+              android:textSize="14dp" />
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/ContactUpdateTime"
+              android:textColor="#656565"
+              android:textSize="12dp"
+              android:gravity="right" />
+        </LinearLayout>
+      </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:background="#D5D5D5" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ContactUpdateContent"
+        android:padding="4dp">
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/ContactUpdateStatus"
+          android:paddingLeft="4dp"
+          android:paddingRight="4dp"
+          android:textColor="#000000"
+          android:textSize="16dp" />
+    </LinearLayout>
+  </LinearLayout>
+</LinearLayout>

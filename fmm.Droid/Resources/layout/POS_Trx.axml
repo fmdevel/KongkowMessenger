@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/MPOS_Page">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/MPOS_Content">
+        <include
+            layout="@layout/ActivityHeader" />
+        <TextView
+            android:text="PROSES"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Send"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:padding="8dp"
+            android:textColor="#FFFFFF"
+            android:background="#454560"
+            android:layout_alignParentBottom="true" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/MPOS_Content"
+            android:layout_above="@+id/Send"
+            android:layout_below="@+id/ActivityHeader">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+                <TextView
+                    android:text="Jenis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="6dp" />
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cbProductType" />
+                <TextView
+                    android:text="Penyedia Layanan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lblKodeProduct"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="6dp" />
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cbProductProvider" />
+                <TextView
+                    android:text="Produk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lblVoucher"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="6dp" />
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cbProduct" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lblDestination"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="6dp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtDestination"
+                    android:singleLine="true" />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="12dp"
+                    android:gravity="center_vertical">
+                    <TextView
+                        android:text="Pengisian Ke"
+                        android:id="@+id/lbPeriod"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="4dp" />
+                    <Spinner
+                        android:id="@+id/cbPeriod"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp" />
+                    <EditText
+                        android:id="@+id/tbHpCustomer"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:layout_height="wrap_content"
+                        android:hint="HP Konsumen" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</LinearLayout>

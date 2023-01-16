@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/MPOS_Page">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/MPOS_Content"
+        android:background="#E0E0E0">
+        <include
+            layout="@layout/ActivityHeader" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/TrxHistoryHeader"
+            android:padding="5dp"
+            android:background="@drawable/drop_shadow">
+            <TextView
+                android:layout_width="112dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/lbDate"
+                android:textSize="16dp"
+                android:background="@drawable/rounded_corner"
+                android:padding="7dp" />
+            <ImageView
+                android:id="@+id/btnSearchByDate"
+                android:src="@drawable/ic_refresh"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:scaleType="fitCenter"
+                android:clickable="true"
+                android:layout_marginLeft="3dp" />
+            <EditText
+                android:layout_width="132dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tbSearch"
+                android:textSize="16dp"
+                android:background="@drawable/rounded_corner"
+                android:padding="7dp"
+                android:singleLine="true"
+                android:layout_marginLeft="16dp"
+                android:hint="Cari .." />
+            <ImageView
+                android:id="@+id/btnSearch"
+                android:src="@drawable/ic_search"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:scaleType="fitCenter"
+                android:clickable="true"
+                android:layout_marginLeft="3dp" />
+        </LinearLayout>
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/Kongkow_ListViewer" />
+    </LinearLayout>
+</LinearLayout>
